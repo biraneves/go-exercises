@@ -50,7 +50,7 @@ func (a *Account) GetBalance() float64 {
 
 func (a *Account) DisplayAccount() string {
 
-	s := fmt.Sprintf("%s's balance: %.2f", a.name, a.balance)
+	s := fmt.Sprintf("%s's balance: %.2f", a.Name, a.balance)
 	return s
 
 }

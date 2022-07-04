@@ -154,7 +154,7 @@ func (hp *HealthProfile) GetBMI() float64 {
 
 }
 
-func GetBMITable() string {
+func (hp *HealthProfile) GetBMITable() string {
 
 	s := fmt.Sprintf("%s\n", sv.SLine("=", 42))
 	s += "BMI (kg/m^2)     Status\n"
@@ -166,7 +166,7 @@ func GetBMITable() string {
 	s += "25.0 - 30.0      Overweight\n"
 	s += "30.0 - 35.0      Obese class I\n"
 	s += "35.0 - 40.0      Obese class II\n"
-	s += ">40.0            Obese class III\n"
+	s += "> 40.0            Obese class III\n"
 	s += fmt.Sprintf("%s\n", sv.SLine("=", 42))
 
 	return s

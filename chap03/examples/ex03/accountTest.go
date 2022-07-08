@@ -8,11 +8,11 @@ import (
 
 func main() {
 
-	account1 := account.NewAccount("Jane Green", 50.00)
-	account2 := account.NewAccount("John Blue", -7.53)
+	account1 := account.New("Jane Green", 50.00)
+	account2 := account.New("John Blue", -7.53)
 
-	fmt.Printf("%s's account balance: $%.2f\n", account1.GetName(), account1.GetBalance())
-	fmt.Printf("%s's account balance: $%.2f\n", account2.GetName(), account2.GetBalance())
+	fmt.Printf("%s's account balance: $%.2f\n", account1.Name, account1.Balance())
+	fmt.Printf("%s's account balance: $%.2f\n", account2.Name, account2.Balance())
 	
 	sv.Lineln("-", 64)
 
@@ -24,8 +24,8 @@ func main() {
 
 	sv.Lineln("-", 64)
 
-	fmt.Printf("%s's account balance: $%.2f\n", account1.GetName(), account1.GetBalance())
-	fmt.Printf("%s's account balance: $%.2f\n", account2.GetName(), account2.GetBalance())
+	fmt.Printf("%s's account balance: $%.2f\n", account1.Name, account1.Balance())
+	fmt.Printf("%s's account balance: $%.2f\n", account2.Name, account2.Balance())
 
 	sv.Lineln("-", 64)
 
@@ -36,7 +36,7 @@ func main() {
 
 	sv.Lineln("-", 64)
 
-	fmt.Printf("%s's account balance: $%.2f\n", account1.GetName(), account1.GetBalance())
-	fmt.Printf("%s's account balance: $%.2f\n", account2.GetName(), account2.GetBalance())
+	fmt.Printf("%s's account balance: $%.2f\n", account1.Name, account1.Balance())
+	fmt.Printf("%s's account balance: $%.2f\n", account2.Name, account2.Balance())
 
 }

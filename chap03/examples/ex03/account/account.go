@@ -1,14 +1,14 @@
 package account
 
 type Account struct {
-	name string
+	Name string
 	balance float64
 }
 
-func NewAccount(name string, balance float64) *Account {
+func New(name string, balance float64) *Account {
 
 	a := new(Account)
-	a.name = name
+	a.Name = name
 
 	if balance > 0.0 {
 		a.balance = balance
@@ -26,20 +26,8 @@ func (a *Account) Deposit(depositAmount float64) {
 
 }
 
-func (a *Account) GetBalance() float64 {
+func (a *Account) Balance() float64 {
 
 	return a.balance
-
-}
-
-func (a *Account) SetName(name string) {
-
-	a.name = name
-
-}
-
-func (a *Account) GetName() string {
-
-	return a.name
 
 }

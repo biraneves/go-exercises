@@ -1,25 +1,13 @@
 package account
 
 type Account struct {
-	name string
+	Name string
 }
 
-func NewAccount(name string) *Account {
+func New(name string) *Account {
 
 	a := new(Account)
-	a.name = name
+	a.Name = name
 	return a
-
-}
-
-func (a *Account) SetName(name string) {
-
-	a.name = name
-
-}
-
-func (a *Account) GetName() string {
-
-	return a.name
 
 }

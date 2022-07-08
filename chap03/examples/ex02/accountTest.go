@@ -7,10 +7,10 @@ import (
 
 func main() {
 
-	account1 := account.NewAccount("Jane Green")
-	account2 := account.NewAccount("John Blue")
+	account1 := account.New("Jane Green")
+	account2 := account.New("John Blue")
 
-	fmt.Println("Account 1 name:", account1.GetName())
-	fmt.Println("Account 2 name:", account2.GetName())
+	fmt.Println("Account 1 name:", account1.Name)
+	fmt.Println("Account 2 name:", account2.Name)
 
 }

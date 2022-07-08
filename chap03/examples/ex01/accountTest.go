@@ -12,12 +12,12 @@ func main() {
 	var name string
 
 	sv.Lineln("=", 64)
-	fmt.Println("Account initial name:", account.GetName())
+	fmt.Println("Account initial name:", account.Name)
 	sv.Lineln("-", 64)
 	fmt.Print("Your name: ")
 	fmt.Scanln(&name)
-	account.SetName(name)
-	fmt.Println("Account name:", account.GetName())
+	account.Name = name
+	fmt.Println("Account name:", account.Name)
 	sv.Lineln("=", 64)
 
 }
